@@ -20,3 +20,10 @@ int main() {
     mahasiswa& refMhs = mhs; // pointer reference refmhs
     refMhs.nim = 2; // member access operator
     mhs.showNim();
+
+    mahasiswa* pMhs = &mhs;
+    pMhs->nim = 3;
+    pMhs->showNim();
+    return 0;
+
+}
